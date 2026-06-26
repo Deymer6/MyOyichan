@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_inicio" />
+    <item
+        android:id="@+id/medicamentosFragment"
+        android:icon="@drawable/ic_medication"
+        android:title="@string/nav_medicamentos" />
+    <item
+        android:id="@+id/vitalesFragment"
+        android:icon="@drawable/ic_vitals"
+        android:title="@string/nav_vitales" />
+    <item
+        android:id="@+id/contactosFragment"
+        android:icon="@drawable/ic_contacts"
+        android:title="@string/nav_contactos" />
+</menu>

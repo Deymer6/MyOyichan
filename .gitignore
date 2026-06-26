@@ -1,0 +1,24 @@
+# ───────────── Gradle / Android build outputs ─────────────
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ───────────── Configuración local de la máquina ─────────────
+local.properties
+
+# ───────────── IDE ─────────────
+.idea/
+*.iml
+.vscode/
+.kotlin/
+
+# ───────────── Logs de crash de la JVM ─────────────
+hs_err_pid*.log
+replay_pid*.log
+
+# ───────────── Sistema operativo ─────────────
+.DS_Store
+Thumbs.db

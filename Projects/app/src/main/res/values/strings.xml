@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyOyichan</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Bienvenido a MyOyichan</string>
+    <string name="login_subtitulo">Tu asistente de salud personal</string>
+    <string name="login_email">Correo electrónico</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_boton">INGRESAR</string>
+    <string name="login_olvidar">¿Olvidé mi contraseña?</string>
+    <string name="login_registrar">REGISTRARME</string>
+    <string name="login_error_email">Ingrese su correo electrónico</string>
+    <string name="login_error_password">Ingrese su contraseña</string>
+    <string name="login_error_credenciales">Correo o contraseña incorrectos</string>
+    <string name="login_error_email_invalido">Correo electrónico no válido</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">Crear Cuenta</string>
+    <string name="registro_nombre">Nombre</string>
+    <string name="registro_apellido">Apellido</string>
+    <string name="registro_email">Correo electrónico</string>
+    <string name="registro_password">Contraseña</string>
+    <string name="registro_confirmar_password">Confirmar contraseña</string>
+    <string name="registro_edad">Edad</string>
+    <string name="registro_enfermedad">Enfermedad</string>
+    <string name="registro_telefono">Teléfono</string>
+    <string name="registro_boton">CREAR CUENTA</string>
+    <string name="registro_error_nombre">Ingrese su nombre</string>
+    <string name="registro_error_apellido">Ingrese su apellido</string>
+    <string name="registro_error_email">Ingrese su correo electrónico</string>
+    <string name="registro_error_email_existe">Este correo ya está registrado</string>
+    <string name="registro_error_password">Ingrese una contraseña</string>
+    <string name="registro_error_password_corta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="registro_error_password_no_coincide">Las contraseñas no coinciden</string>
+    <string name="registro_error_edad">Ingrese su edad</string>
+    <string name="registro_error_telefono">Ingrese su teléfono</string>
+    <string name="registro_exito">Cuenta creada exitosamente</string>
+
+    <!-- Recuperar contraseña -->
+    <string name="recuperar_titulo">Recuperar Contraseña</string>
+    <string name="recuperar_email">Correo electrónico registrado</string>
+    <string name="recuperar_nueva_password">Nueva contraseña</string>
+    <string name="recuperar_confirmar_password">Confirmar nueva contraseña</string>
+    <string name="recuperar_boton">CAMBIAR CONTRASEÑA</string>
+    <string name="recuperar_error_email">Ingrese su correo electrónico</string>
+    <string name="recuperar_error_email_no_existe">No se encontró una cuenta con ese correo</string>
+    <string name="recuperar_error_password">Ingrese la nueva contraseña</string>
+    <string name="recuperar_error_password_corta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="recuperar_error_password_no_coincide">Las contraseñas no coinciden</string>
+    <string name="recuperar_exito">Contraseña actualizada exitosamente</string>
+
+    <!-- Enfermedades (Spinner) -->
+    <string name="enfermedad_seleccionar">Seleccione su enfermedad</string>
+    <string-array name="enfermedades_array">
+        <item>Seleccione su enfermedad</item>
+        <item>Hipertensión</item>
+        <item>Diabetes</item>
+        <item>Ambas</item>
+        <item>Otra</item>
+    </string-array>
+
+    <!-- Navegación inferior -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_medicamentos">Medicamentos</string>
+    <string name="nav_vitales">Vitales</string>
+    <string name="nav_contactos">Contactos</string>
+
+    <!-- Home -->
+    <string name="home_saludo">Hola, %1$s</string>
+    <string name="home_resumen_titulo">Resumen del día</string>
+    <string name="home_medicamentos_pendientes">Medicamentos pendientes: %1$d</string>
+    <string name="home_sin_medicamentos">No tiene medicamentos registrados</string>
+    <string name="home_proximo_recordatorio">Próximo recordatorio:</string>
+    <string name="home_sin_recordatorios">Sin recordatorios programados</string>
+    <string name="home_ver_salud">VER MI SALUD HOY</string>
+    <string name="home_contacto_sos">CONTACTO SOS</string>
+    <string name="home_sin_contacto_sos">No tiene un contacto SOS principal configurado</string>
+    <string name="home_llamando_sos">Llamando a contacto de emergencia…</string>
+
+    <!-- Perfil -->
+    <string name="perfil_titulo">Mi Perfil</string>
+    <string name="perfil_guardar">GUARDAR CAMBIOS</string>
+    <string name="perfil_cerrar_sesion">CERRAR SESIÓN</string>
+    <string name="perfil_exito">Perfil actualizado correctamente</string>
+    <string name="perfil_confirmar_cerrar">¿Está seguro que desea cerrar sesión?</string>
+    <string name="perfil_si">Sí</string>
+    <string name="perfil_no">No</string>
+
+    <!-- Configuración -->
+    <string name="settings_titulo">Configuración</string>
+    <string name="settings_velocidad_voz">Velocidad de voz</string>
+    <string name="settings_tono_voz">Tono de voz</string>
+    <string name="settings_asistente_voz">Asistente de voz</string>
+    <string name="settings_notificaciones">Notificaciones</string>
+    <string name="settings_tamano_fuente">Tamaño de fuente</string>
+    <string name="settings_voz_preview">Así se escuchará el asistente de voz.</string>
+    <string-array name="tamano_fuente_array">
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Muy Grande</item>
+    </string-array>
+
+    <!-- Medicamentos -->
+    <string name="medicamentos_titulo">Mis Medicamentos</string>
+    <string name="medicamentos_vacio">No tiene medicamentos registrados.\nToque + para agregar uno.</string>
+    <string name="medicamento_agregar">Agregar Medicamento</string>
+    <string name="medicamento_editar">Editar Medicamento</string>
+    <string name="medicamento_nombre">Nombre del medicamento</string>
+    <string name="medicamento_dosis">Dosis</string>
+    <string name="medicamento_frecuencia">Frecuencia</string>
+    <string name="medicamento_horario">Horario</string>
+    <string name="medicamento_notas">Notas (opcional)</string>
+    <string name="medicamento_guardar">GUARDAR</string>
+    <string name="medicamento_eliminar">Eliminar</string>
+    <string name="medicamento_info_fda">INFO FDA</string>
+    <string name="medicamento_error_nombre">Ingrese el nombre del medicamento</string>
+    <string name="medicamento_error_dosis">Ingrese la dosis</string>
+    <string name="medicamento_exito_guardar">Medicamento guardado correctamente</string>
+    <string name="medicamento_exito_eliminar">Medicamento eliminado</string>
+    <string name="medicamento_confirmar_eliminar">¿Está seguro que desea eliminar este medicamento?</string>
+
+    <string-array name="frecuencia_array">
+        <item>Seleccione frecuencia</item>
+        <item>Cada 4 horas</item>
+        <item>Cada 6 horas</item>
+        <item>Cada 8 horas</item>
+        <item>Cada 12 horas</item>
+        <item>Una vez al día</item>
+        <item>Dos veces al día</item>
+        <item>Tres veces al día</item>
+    </string-array>
+
+    <!-- Info Medicamento FDA -->
+    <string name="info_fda_titulo">Información del Medicamento</string>
+    <string name="info_fda_cargando">Buscando información…</string>
+    <string name="info_fda_nombre_marca">Nombre de marca</string>
+    <string name="info_fda_nombre_generico">Nombre genérico</string>
+    <string name="info_fda_proposito">Para qué sirve</string>
+    <string name="info_fda_advertencias">Advertencias</string>
+    <string name="info_fda_reacciones">Reacciones adversas</string>
+    <string name="info_fda_dosis">Dosis recomendada</string>
+    <string name="info_fda_leer_voz">LEER EN VOZ ALTA</string>
+    <string name="info_fda_no_encontrado">No se encontró información de este medicamento en la base de datos de la FDA.</string>
+    <string name="info_fda_sin_conexion">Sin conexión. La información del medicamento no está disponible ahora.</string>
+    <string name="info_fda_error">Error al consultar la FDA. Intente de nuevo.</string>
+
+    <!-- Signos Vitales -->
+    <string name="vitales_titulo">Mis Signos Vitales</string>
+    <string name="vitales_vacio">No tiene registros de signos vitales.\nToque + para registrar uno.</string>
+    <string name="vital_agregar">Registrar Signo Vital</string>
+    <string name="vital_tipo">Tipo de signo vital</string>
+    <string name="vital_valor">Valor</string>
+    <string name="vital_unidad">Unidad</string>
+    <string name="vital_fecha">Fecha</string>
+    <string name="vital_hora">Hora</string>
+    <string name="vital_notas">Notas (opcional)</string>
+    <string name="vital_registrar">REGISTRAR</string>
+    <string name="vital_error_valor">Ingrese el valor</string>
+    <string name="vital_exito">Signo vital registrado correctamente</string>
+    <string name="vital_filtrar_todos">Todos</string>
+
+    <string-array name="tipo_vital_array">
+        <item>Seleccione tipo</item>
+        <item>Presión arterial</item>
+        <item>Glucosa</item>
+        <item>Peso</item>
+        <item>Temperatura</item>
+    </string-array>
+
+    <string-array name="tipo_vital_keys">
+        <item>TODOS</item>
+        <item>PRESION</item>
+        <item>GLUCOSA</item>
+        <item>PESO</item>
+        <item>TEMPERATURA</item>
+    </string-array>
+
+    <!-- Contactos SOS -->
+    <string name="contactos_titulo">Contactos de Emergencia</string>
+    <string name="contactos_vacio">No tiene contactos de emergencia.\nToque + para agregar uno.</string>
+    <string name="contacto_agregar">Agregar Contacto</string>
+    <string name="contacto_editar">Editar Contacto</string>
+    <string name="contacto_nombre">Nombre del contacto</string>
+    <string name="contacto_relacion">Relación</string>
+    <string name="contacto_telefono">Teléfono</string>
+    <string name="contacto_es_principal">Contacto principal</string>
+    <string name="contacto_guardar">GUARDAR</string>
+    <string name="contacto_llamar">LLAMAR</string>
+    <string name="contacto_eliminar">Eliminar</string>
+    <string name="contacto_error_nombre">Ingrese el nombre del contacto</string>
+    <string name="contacto_error_telefono">Ingrese el teléfono</string>
+    <string name="contacto_exito_guardar">Contacto guardado correctamente</string>
+    <string name="contacto_exito_eliminar">Contacto eliminado</string>
+    <string name="contacto_confirmar_eliminar">¿Está seguro que desea eliminar este contacto?</string>
+    <string name="contacto_principal_badge">PRINCIPAL</string>
+
+    <string-array name="relacion_array">
+        <item>Seleccione relación</item>
+        <item>Hijo/a</item>
+        <item>Médico</item>
+        <item>Familiar</item>
+        <item>Otro</item>
+    </string-array>
+
+    <!-- Recordatorios -->
+    <string name="recordatorios_titulo">Recordatorios</string>
+    <string name="recordatorios_vacio">No tiene recordatorios programados.</string>
+    <string name="recordatorio_notif_titulo">Recordatorio de Medicamento</string>
+    <string name="recordatorio_notif_texto">Es hora de tomar: %1$s</string>
+    <string name="recordatorio_canal_nombre">Recordatorios de medicamentos</string>
+    <string name="recordatorio_canal_desc">Notificaciones para recordatorios de toma de medicamentos</string>
+
+    <!-- Voz -->
+    <string name="voz_escuchando">Escuchando…</string>
+    <string name="voz_no_entendido">No entendí el comando. Intente de nuevo.</string>
+    <string name="voz_permiso_requerido">Se necesita permiso del micrófono para usar el asistente de voz.</string>
+    <string name="voz_permiso_titulo">Permiso de Micrófono</string>
+    <string name="voz_permiso_mensaje">MyOyichan necesita acceso al micrófono para escuchar sus comandos de voz. Esto le permite controlar la aplicación con su voz.</string>
+    <string name="voz_permiso_aceptar">Aceptar</string>
+    <string name="voz_permiso_cancelar">Cancelar</string>
+
+    <!-- General -->
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="guardar">Guardar</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="cargando">Cargando…</string>
+    <string name="error_general">Ocurrió un error. Intente de nuevo.</string>
+    <string name="sin_conexion">Sin conexión a internet</string>
+    <string name="permiso_llamada">Se necesita permiso para realizar llamadas de emergencia.</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_boton_voz">Asistente de voz</string>
+    <string name="cd_perfil">Ver perfil</string>
+    <string name="cd_configuracion">Configuración</string>
+    <string name="cd_agregar">Agregar nuevo</string>
+    <string name="cd_editar">Editar</string>
+    <string name="cd_eliminar">Eliminar</string>
+    <string name="cd_llamar">Llamar</string>
+    <string name="cd_info">Información</string>
+    <string name="cd_volver">Volver</string>
+</resources>

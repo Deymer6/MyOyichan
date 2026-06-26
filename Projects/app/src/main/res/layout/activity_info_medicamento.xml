@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_volver"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/info_fda_titulo"
+            android:textAppearance="@style/TextAppearance.MyOyichan.Title" />
+
+        <!-- Cargando -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_xxl"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/info_fda_cargando"
+            android:textAppearance="@style/TextAppearance.MyOyichan.Body"
+            android:visibility="gone" />
+
+        <!-- Error -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MyOyichan.Body"
+            android:textColor="@color/error"
+            android:visibility="gone" />
+
+        <!-- Contenido -->
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- Nombre de marca -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_nombre_marca"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/primary" />
+                    <TextView
+                        android:id="@+id/tvBrandName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Nombre genérico -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_nombre_generico"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/primary" />
+                    <TextView
+                        android:id="@+id/tvGenericName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Propósito -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_proposito"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/primary" />
+                    <TextView
+                        android:id="@+id/tvPurpose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Advertencias -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_advertencias"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/warning" />
+                    <TextView
+                        android:id="@+id/tvWarnings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Reacciones adversas -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_reacciones"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/error" />
+                    <TextView
+                        android:id="@+id/tvAdverseReactions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Dosis recomendada -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MyOyichan.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_md">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_fda_dosis"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                        android:textColor="@color/info" />
+                    <TextView
+                        android:id="@+id/tvDosage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:lineSpacingExtra="6dp"
+                        android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Botón leer en voz alta -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReadAloud"
+                style="@style/Widget.MyOyichan.Button.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:layout_marginBottom="@dimen/spacing_xl"
+                android:text="@string/info_fda_leer_voz"
+                app:backgroundTint="@color/accent"
+                app:icon="@drawable/ic_volume_up"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_lg">
+
+        <!-- Saludo -->
+        <TextView
+            android:id="@+id/tvSaludo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_saludo"
+            android:textAppearance="@style/TextAppearance.MyOyichan.Title" />
+
+        <!-- Resumen del día -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.MyOyichan.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_md">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_resumen_titulo"
+                    android:textAppearance="@style/TextAppearance.MyOyichan.Subtitle"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/tvMedicamentosPendientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+
+                <TextView
+                    android:id="@+id/tvProximoRecordatorio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:textAppearance="@style/TextAppearance.MyOyichan.Body" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Botón VER MI SALUD HOY -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerSalud"
+            style="@style/Widget.MyOyichan.Button.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:text="@string/home_ver_salud"
+            app:backgroundTint="@color/primary"
+            app:icon="@drawable/ic_vitals"
+            app:iconGravity="textStart" />
+
+        <!-- Botón SOS -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSOS"
+            style="@style/Widget.MyOyichan.Button.SOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/home_contacto_sos"
+            app:icon="@drawable/ic_phone"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+</ScrollView>

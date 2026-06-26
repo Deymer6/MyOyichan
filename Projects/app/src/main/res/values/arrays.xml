@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="frecuencias_array">
+        <item>Cada 8 horas</item>
+        <item>Cada 12 horas</item>
+        <item>Cada 24 horas</item>
+        <item>Según necesidad</item>
+    </string-array>
+
+    <string-array name="tipos_vitales_array">
+        <item>PRESION</item>
+        <item>GLUCOSA</item>
+        <item>PESO</item>
+        <item>TEMPERATURA</item>
+        <item>OXIGENO</item>
+    </string-array>
+
+    <string-array name="relaciones_array">
+        <item>Hijo/a</item>
+        <item>Esposo/a</item>
+        <item>Hermano/a</item>
+        <item>Amigo/a</item>
+        <item>Cuidador/a</item>
+        <item>Médico</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
